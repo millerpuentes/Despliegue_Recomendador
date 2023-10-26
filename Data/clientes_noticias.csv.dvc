@@ -1,0 +1,5 @@
+outs:
+- md5: 834d9ecefdeeea6233f6f4b29b770faa
+  size: 11983275
+  hash: md5
+  path: clientes_noticias.csv
