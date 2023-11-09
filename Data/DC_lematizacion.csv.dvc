@@ -1,0 +1,5 @@
+outs:
+- md5: 4649dc333f77e82aa6f872ce6257cae8
+  size: 70235319
+  hash: md5
+  path: DC_lematizacion.csv

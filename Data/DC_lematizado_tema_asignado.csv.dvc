@@ -1,0 +1,5 @@
+outs:
+- md5: 997555d9259f3b1c81d8534525a64dd6
+  size: 184320893
+  hash: md5
+  path: DC_lematizado_tema_asignado.csv

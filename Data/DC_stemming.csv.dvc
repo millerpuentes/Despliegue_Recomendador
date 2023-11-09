@@ -1,0 +1,5 @@
+outs:
+- md5: 548f8cf5ec4cb4b6735f0b081c743e73
+  size: 58963740
+  hash: md5
+  path: DC_stemming.csv

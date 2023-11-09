@@ -1,0 +1,5 @@
+outs:
+- md5: c2d2f1c65e8bd04636e42c02cffe5c50
+  size: 171482435
+  hash: md5
+  path: DC_stemming_tema_asignado.csv

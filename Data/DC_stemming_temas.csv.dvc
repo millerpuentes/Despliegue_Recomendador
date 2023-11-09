@@ -1,0 +1,5 @@
+outs:
+- md5: 261e43a3e5099d984d7fc87be81fc6ab
+  size: 171216687
+  hash: md5
+  path: DC_stemming_temas.csv

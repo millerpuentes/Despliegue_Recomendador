@@ -1,3 +1,9 @@
 /clientes.csv
 /clientes_noticias.csv
 /noticias.csv
+/DC_lematizacion.csv
+/DC_lematizacion_temas.csv
+/DC_lematizado_tema_asignado.csv
+/DC_stemming.csv
+/DC_stemming_tema_asignado.csv
+/DC_stemming_temas.csv
