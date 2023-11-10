@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/relat/Documents/GitHub/Despliegues_MIAD/Proyecto/Despliegue_Recomendador/Model/mlruns/714934750370939689/622e2e12179a46fab09793f4deab9442/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '714934750370939689'
+lifecycle_stage: active
+run_id: 622e2e12179a46fab09793f4deab9442
+run_name: carefree-stork-467
+run_uuid: 622e2e12179a46fab09793f4deab9442
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1699581261400
+status: 1
+tags: []
+user_id: relat
