@@ -1,0 +1,16 @@
+artifact_uri: file:///C:/Users/relat/Documents/GitHub/Despliegues_MIAD/Proyecto/Despliegue_Recomendador/Model/mlruns/828532267539617871/87cdcc14982e4a84a6cbbeb7c2ba26b3/artifacts
+deleted_time: 1699536896728
+end_time: 1699533053766
+entry_point_name: ''
+experiment_id: '828532267539617871'
+lifecycle_stage: deleted
+run_id: 87cdcc14982e4a84a6cbbeb7c2ba26b3
+run_name: dazzling-gull-510
+run_uuid: 87cdcc14982e4a84a6cbbeb7c2ba26b3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1699533053746
+status: 4
+tags: []
+user_id: relat

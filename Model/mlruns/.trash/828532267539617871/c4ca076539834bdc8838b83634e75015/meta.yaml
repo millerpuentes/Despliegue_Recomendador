@@ -1,0 +1,16 @@
+artifact_uri: file:///C:/Users/relat/Documents/GitHub/Despliegues_MIAD/Proyecto/Despliegue_Recomendador/Model/mlruns/828532267539617871/c4ca076539834bdc8838b83634e75015/artifacts
+deleted_time: 1699536896728
+end_time: 1699536814219
+entry_point_name: ''
+experiment_id: '828532267539617871'
+lifecycle_stage: deleted
+run_id: c4ca076539834bdc8838b83634e75015
+run_name: burly-squirrel-181
+run_uuid: c4ca076539834bdc8838b83634e75015
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1699536802337
+status: 4
+tags: []
+user_id: relat

@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/relat/Documents/GitHub/Despliegues_MIAD/Proyecto/Despliegue_Recomendador/Model/mlruns/714934750370939689/c8b0f55a51f144ebac0b9d7892776bff/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '714934750370939689'
+lifecycle_stage: active
+run_id: c8b0f55a51f144ebac0b9d7892776bff
+run_name: stylish-calf-461
+run_uuid: c8b0f55a51f144ebac0b9d7892776bff
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1699537419580
+status: 1
+tags: []
+user_id: relat

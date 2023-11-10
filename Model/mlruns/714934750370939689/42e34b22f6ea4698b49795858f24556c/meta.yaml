@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/relat/Documents/GitHub/Despliegues_MIAD/Proyecto/Despliegue_Recomendador/Model/mlruns/714934750370939689/42e34b22f6ea4698b49795858f24556c/artifacts
+end_time: 1699555057957
+entry_point_name: ''
+experiment_id: '714934750370939689'
+lifecycle_stage: active
+run_id: 42e34b22f6ea4698b49795858f24556c
+run_name: tasteful-goose-207
+run_uuid: 42e34b22f6ea4698b49795858f24556c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1699554601357
+status: 4
+tags: []
+user_id: relat

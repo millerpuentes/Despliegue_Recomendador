@@ -1,0 +1,16 @@
+artifact_uri: file:///C:/Users/relat/Documents/GitHub/Despliegues_MIAD/Proyecto/Despliegue_Recomendador/Model/mlruns/828532267539617871/48679950b7434e33940a872948b5f4e3/artifacts
+deleted_time: 1699536896728
+end_time: 1699535032718
+entry_point_name: ''
+experiment_id: '828532267539617871'
+lifecycle_stage: deleted
+run_id: 48679950b7434e33940a872948b5f4e3
+run_name: marvelous-conch-272
+run_uuid: 48679950b7434e33940a872948b5f4e3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1699534543104
+status: 4
+tags: []
+user_id: relat

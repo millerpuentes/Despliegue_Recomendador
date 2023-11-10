@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/relat/Documents/GitHub/Despliegues_MIAD/Proyecto/Despliegue_Recomendador/Model/mlruns/714934750370939689/0ebbac520888496c92ecb593bb2b7e9f/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '714934750370939689'
+lifecycle_stage: active
+run_id: 0ebbac520888496c92ecb593bb2b7e9f
+run_name: resilient-hawk-499
+run_uuid: 0ebbac520888496c92ecb593bb2b7e9f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1699554111560
+status: 1
+tags: []
+user_id: relat

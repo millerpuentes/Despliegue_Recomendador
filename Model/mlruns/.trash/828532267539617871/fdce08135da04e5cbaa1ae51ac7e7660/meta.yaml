@@ -1,0 +1,16 @@
+artifact_uri: file:///C:/Users/relat/Documents/GitHub/Despliegues_MIAD/Proyecto/Despliegue_Recomendador/Model/mlruns/828532267539617871/fdce08135da04e5cbaa1ae51ac7e7660/artifacts
+deleted_time: 1699536896728
+end_time: null
+entry_point_name: ''
+experiment_id: '828532267539617871'
+lifecycle_stage: deleted
+run_id: fdce08135da04e5cbaa1ae51ac7e7660
+run_name: rumbling-auk-935
+run_uuid: fdce08135da04e5cbaa1ae51ac7e7660
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1699534001324
+status: 1
+tags: []
+user_id: relat

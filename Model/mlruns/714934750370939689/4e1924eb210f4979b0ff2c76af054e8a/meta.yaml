@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/relat/Documents/GitHub/Despliegues_MIAD/Proyecto/Despliegue_Recomendador/Model/mlruns/714934750370939689/4e1924eb210f4979b0ff2c76af054e8a/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '714934750370939689'
+lifecycle_stage: active
+run_id: 4e1924eb210f4979b0ff2c76af054e8a
+run_name: marvelous-bee-716
+run_uuid: 4e1924eb210f4979b0ff2c76af054e8a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1699556198136
+status: 1
+tags: []
+user_id: relat

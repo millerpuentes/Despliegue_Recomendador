@@ -1,0 +1,16 @@
+artifact_uri: file:///C:/Users/relat/Documents/GitHub/Despliegues_MIAD/Proyecto/Despliegue_Recomendador/Model/mlruns/850332797602889348/2d359f9610c94588b209b9893229d457/artifacts
+deleted_time: 1699537341023
+end_time: null
+entry_point_name: ''
+experiment_id: '850332797602889348'
+lifecycle_stage: deleted
+run_id: 2d359f9610c94588b209b9893229d457
+run_name: gentle-shrew-484
+run_uuid: 2d359f9610c94588b209b9893229d457
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1699537074395
+status: 1
+tags: []
+user_id: relat
