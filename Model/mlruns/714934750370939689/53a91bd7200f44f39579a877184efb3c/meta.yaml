@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/relat/Documents/GitHub/Despliegues_MIAD/Proyecto/Despliegue_Recomendador/Model/mlruns/714934750370939689/53a91bd7200f44f39579a877184efb3c/artifacts
+end_time: 1699578314661
+entry_point_name: ''
+experiment_id: '714934750370939689'
+lifecycle_stage: active
+run_id: 53a91bd7200f44f39579a877184efb3c
+run_name: skillful-steed-39
+run_uuid: 53a91bd7200f44f39579a877184efb3c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1699577910219
+status: 4
+tags: []
+user_id: jchaconc

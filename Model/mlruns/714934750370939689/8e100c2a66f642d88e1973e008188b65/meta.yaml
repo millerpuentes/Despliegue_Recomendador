@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/relat/Documents/GitHub/Despliegues_MIAD/Proyecto/Despliegue_Recomendador/Model/mlruns/714934750370939689/8e100c2a66f642d88e1973e008188b65/artifacts
+end_time: 1699579995430
+entry_point_name: ''
+experiment_id: '714934750370939689'
+lifecycle_stage: active
+run_id: 8e100c2a66f642d88e1973e008188b65
+run_name: wistful-eel-79
+run_uuid: 8e100c2a66f642d88e1973e008188b65
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1699579565175
+status: 4
+tags: []
+user_id: jchaconc
