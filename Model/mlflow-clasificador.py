@@ -114,7 +114,7 @@ with mlflow.start_run(experiment_id=experiment.experiment_id):
     mlflow.log_param("passes", passes)
   
     # Registre el modelo
-    mlflow.sklearn.log_model(LDA_stemming, "LDA_stemming_1")
+    #mlflow.sklearn.log_model(LDA_stemming, "LDA_stemming_1")
   
     # Cree y registre la métrica de interés   
     #model = LdaMulticore(corpus=corpus, 
@@ -126,16 +126,13 @@ with mlflow.start_run(experiment_id=experiment.experiment_id):
     # Coherencia
     cm= CoherenceModel(model=LDA_stemming, texts=tokens_stemming, dictionary=dictionary_stemming, coherence='c_v')
     coherence = cm.get_coherence()
-    mlflow.sklearn.log_metric("coherencia", coherence)
+    mlflow.log_metric("coherencia", coherence)
 
-    perplejidad = LDA_stemming.log_perplexity(corpus)
+    #perplejidad = LDA_stemming.log_perplexity(corpus)
 
     # Perplejidad
     #perplejidad = np.exp2(-model.log_perplexity(corpus))
     #mlflow.sklearn.log_metric("perplejidad", perplejidad)
     
-    print(perplejidad)
-    print(coherence)
-
-#if __name__ == '__main__':
-#    main()
+    #print(perplejidad)
+    #print(coherence)
