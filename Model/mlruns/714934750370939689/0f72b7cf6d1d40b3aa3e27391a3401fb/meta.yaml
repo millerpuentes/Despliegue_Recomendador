@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/relat/Documents/GitHub/Despliegues_MIAD/Proyecto/Despliegue_Recomendador/Model/mlruns/714934750370939689/0f72b7cf6d1d40b3aa3e27391a3401fb/artifacts
+end_time: 1699580573625
+entry_point_name: ''
+experiment_id: '714934750370939689'
+lifecycle_stage: active
+run_id: 0f72b7cf6d1d40b3aa3e27391a3401fb
+run_name: intrigued-mink-562
+run_uuid: 0f72b7cf6d1d40b3aa3e27391a3401fb
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1699580558257
+status: 4
+tags: []
+user_id: JORGE
