@@ -16,6 +16,9 @@ import nltk
 import mlflow
 import mlflow.sklearn
 
+
+#Empieza el desarrollo
+
 # Asegúrate de que estas descargas de nltk se ejecuten una sola vez.
 nltk.download('punkt')
 nltk.download('wordnet')
