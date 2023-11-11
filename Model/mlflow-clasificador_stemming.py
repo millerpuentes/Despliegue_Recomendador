@@ -16,18 +16,9 @@ import mlflow
 
 
 def main():
-    # Cargar el modelo de spacy para el español
-    nlp = spacy.load("es_core_news_sm")
 
-    # Obtener las stopwords en español
-    stopwords_lista = stopwords.words('spanish')
-
-    # Importe el conjunto de datos
-    df_clientes = pd.read_csv('../Data/clientes.csv')
-    df_clientes_noticias = pd.read_csv('../Data/clientes_noticias.csv')
-    df_noticias = pd.read_csv('../Data/noticias.csv')
-
-    # LDA - Stemming
+    ########################     LDA - Stemming   #############################################
+    
     # Se importa el archivo
     df_bd_stemming = pd.read_csv('../Data/DC_stemming.csv')
     # Se tokeniza el texto
@@ -42,11 +33,11 @@ def main():
     # defina el servidor para llevar el registro de modelos y artefactos
     # mlflow.set_tracking_uri('http://localhost:5000')
     # registre el experimento
-    experiment = mlflow.set_experiment("LDA_Clasificador") 
+    experiment = mlflow.set_experiment("LDA_Clasificador_stemming") 
 
     # Definir valores para iterar
     chunksize_values = [500, 1000, 1500]
-    num_topics_values = [15, 20, 25]
+    num_topics_values = [16, 20, 25]
     passes_values = [15, 20, 25]
 
     for chunksize in chunksize_values:
@@ -75,7 +66,7 @@ def main():
                     mlflow.log_param("passes", passes)
 
                     # Registre el modelo
-                    mlflow.sklearn.log_model(LDA_stemming, "LDA_stemming_1")
+                    mlflow.sklearn.log_model(LDA_stemming, "LDA_stemming")
                     
                     # Cree y registre la métrica de interés
 
