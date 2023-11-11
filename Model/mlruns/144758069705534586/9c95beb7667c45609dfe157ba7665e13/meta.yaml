@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/relat/Documents/GitHub/Despliegues_MIAD/Proyecto/Despliegue_Recomendador/Model/mlruns/144758069705534586/9c95beb7667c45609dfe157ba7665e13/artifacts
+end_time: 1699667806847
+entry_point_name: ''
+experiment_id: '144758069705534586'
+lifecycle_stage: active
+run_id: 9c95beb7667c45609dfe157ba7665e13
+run_name: unruly-croc-932
+run_uuid: 9c95beb7667c45609dfe157ba7665e13
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1699667204523
+status: 3
+tags: []
+user_id: relat

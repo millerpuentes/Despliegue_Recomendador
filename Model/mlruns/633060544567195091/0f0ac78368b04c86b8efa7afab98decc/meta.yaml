@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/relat/Documents/GitHub/Despliegues_MIAD/Proyecto/Despliegue_Recomendador/Model/mlruns/633060544567195091/0f0ac78368b04c86b8efa7afab98decc/artifacts
+end_time: 1699682499536
+entry_point_name: ''
+experiment_id: '633060544567195091'
+lifecycle_stage: active
+run_id: 0f0ac78368b04c86b8efa7afab98decc
+run_name: painted-fowl-222
+run_uuid: 0f0ac78368b04c86b8efa7afab98decc
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1699681802473
+status: 3
+tags: []
+user_id: relat

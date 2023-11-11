@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/relat/Documents/GitHub/Despliegues_MIAD/Proyecto/Despliegue_Recomendador/Model/mlruns/144758069705534586/4c5915b78471423284c0995233b7bf12/artifacts
+end_time: 1699681961996
+entry_point_name: ''
+experiment_id: '144758069705534586'
+lifecycle_stage: active
+run_id: 4c5915b78471423284c0995233b7bf12
+run_name: righteous-boar-109
+run_uuid: 4c5915b78471423284c0995233b7bf12
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1699681215979
+status: 3
+tags: []
+user_id: relat

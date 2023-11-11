@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/relat/Documents/GitHub/Despliegues_MIAD/Proyecto/Despliegue_Recomendador/Model/mlruns/144758069705534586/0dea84153fc54f38a851db1d3448a258/artifacts
+end_time: 1699678527968
+entry_point_name: ''
+experiment_id: '144758069705534586'
+lifecycle_stage: active
+run_id: 0dea84153fc54f38a851db1d3448a258
+run_name: unique-cat-579
+run_uuid: 0dea84153fc54f38a851db1d3448a258
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1699677478614
+status: 3
+tags: []
+user_id: relat

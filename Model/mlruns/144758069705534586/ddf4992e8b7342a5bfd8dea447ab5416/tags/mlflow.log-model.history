@@ -1,0 +1,1 @@
+[{"run_id": "ddf4992e8b7342a5bfd8dea447ab5416", "artifact_path": "LDA_Lematizacion", "utc_time_created": "2023-11-11 03:25:36.100147", "flavors": {"sklearn": {"pickled_model": "model.pkl", "sklearn_version": "1.3.2", "serialization_format": "cloudpickle", "code": null}}, "model_uuid": "082e65fd15ba4499a3465db0ac53a9cd", "mlflow_version": "2.8.0", "model_size_bytes": 3759799}]

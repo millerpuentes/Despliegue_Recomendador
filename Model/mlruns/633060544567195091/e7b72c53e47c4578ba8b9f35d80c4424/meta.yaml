@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/relat/Documents/GitHub/Despliegues_MIAD/Proyecto/Despliegue_Recomendador/Model/mlruns/633060544567195091/e7b72c53e47c4578ba8b9f35d80c4424/artifacts
+end_time: 1699670053389
+entry_point_name: ''
+experiment_id: '633060544567195091'
+lifecycle_stage: active
+run_id: e7b72c53e47c4578ba8b9f35d80c4424
+run_name: merciful-auk-34
+run_uuid: e7b72c53e47c4578ba8b9f35d80c4424
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1699669236004
+status: 3
+tags: []
+user_id: relat

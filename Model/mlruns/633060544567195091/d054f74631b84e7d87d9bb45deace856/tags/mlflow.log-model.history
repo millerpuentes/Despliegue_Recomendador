@@ -1,0 +1,1 @@
+[{"run_id": "d054f74631b84e7d87d9bb45deace856", "artifact_path": "LDA_stemming", "utc_time_created": "2023-11-11 03:28:12.236041", "flavors": {"sklearn": {"pickled_model": "model.pkl", "sklearn_version": "1.3.2", "serialization_format": "cloudpickle", "code": null}}, "model_uuid": "c6bf0a9f1b684f0c9aa8ec35b2d59e00", "mlflow_version": "2.8.0", "model_size_bytes": 2140201}]

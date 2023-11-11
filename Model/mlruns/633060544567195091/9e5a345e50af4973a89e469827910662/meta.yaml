@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/relat/Documents/GitHub/Despliegues_MIAD/Proyecto/Despliegue_Recomendador/Model/mlruns/633060544567195091/9e5a345e50af4973a89e469827910662/artifacts
+end_time: 1699671772685
+entry_point_name: ''
+experiment_id: '633060544567195091'
+lifecycle_stage: active
+run_id: 9e5a345e50af4973a89e469827910662
+run_name: youthful-koi-732
+run_uuid: 9e5a345e50af4973a89e469827910662
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1699670816068
+status: 3
+tags: []
+user_id: relat

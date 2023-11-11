@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/relat/Documents/GitHub/Despliegues_MIAD/Proyecto/Despliegue_Recomendador/Model/mlruns/144758069705534586/9de918292ab7416c8d97117c79784d51/artifacts
+end_time: 1699674455194
+entry_point_name: ''
+experiment_id: '144758069705534586'
+lifecycle_stage: active
+run_id: 9de918292ab7416c8d97117c79784d51
+run_name: nebulous-swan-944
+run_uuid: 9de918292ab7416c8d97117c79784d51
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1699673901086
+status: 3
+tags: []
+user_id: relat

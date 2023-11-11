@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/relat/Documents/GitHub/Despliegues_MIAD/Proyecto/Despliegue_Recomendador/Model/mlruns/633060544567195091/ba4007c99de04a79be29948dad3abbd2/artifacts
+end_time: 1699667995622
+entry_point_name: ''
+experiment_id: '633060544567195091'
+lifecycle_stage: active
+run_id: ba4007c99de04a79be29948dad3abbd2
+run_name: resilient-mule-798
+run_uuid: ba4007c99de04a79be29948dad3abbd2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1699667348510
+status: 3
+tags: []
+user_id: relat

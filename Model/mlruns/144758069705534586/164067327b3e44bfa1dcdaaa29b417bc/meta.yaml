@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/relat/Documents/GitHub/Despliegues_MIAD/Proyecto/Despliegue_Recomendador/Model/mlruns/144758069705534586/164067327b3e44bfa1dcdaaa29b417bc/artifacts
+end_time: 1699682681729
+entry_point_name: ''
+experiment_id: '144758069705534586'
+lifecycle_stage: active
+run_id: 164067327b3e44bfa1dcdaaa29b417bc
+run_name: entertaining-rat-616
+run_uuid: 164067327b3e44bfa1dcdaaa29b417bc
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1699681962003
+status: 3
+tags: []
+user_id: relat

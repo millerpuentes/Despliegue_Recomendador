@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/relat/Documents/GitHub/Despliegues_MIAD/Proyecto/Despliegue_Recomendador/Model/mlruns/144758069705534586/1132366a9d8c4e9a8941d6fa1585a61f/artifacts
+end_time: 1699672276445
+entry_point_name: ''
+experiment_id: '144758069705534586'
+lifecycle_stage: active
+run_id: 1132366a9d8c4e9a8941d6fa1585a61f
+run_name: tasteful-crow-919
+run_uuid: 1132366a9d8c4e9a8941d6fa1585a61f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1699671224712
+status: 3
+tags: []
+user_id: relat

@@ -1,0 +1,16 @@
+artifact_uri: file:///C:/Users/relat/Documents/GitHub/Despliegues_MIAD/Proyecto/Despliegue_Recomendador/Model/mlruns/714934750370939689/e96c5c3d42b149789f15ab1b524e9012/artifacts
+deleted_time: 1699704809957
+end_time: 1699662167484
+entry_point_name: ''
+experiment_id: '714934750370939689'
+lifecycle_stage: deleted
+run_id: e96c5c3d42b149789f15ab1b524e9012
+run_name: angry-worm-62
+run_uuid: e96c5c3d42b149789f15ab1b524e9012
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1699661668291
+status: 3
+tags: []
+user_id: relat

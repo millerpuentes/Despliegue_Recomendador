@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/relat/Documents/GitHub/Despliegues_MIAD/Proyecto/Despliegue_Recomendador/Model/mlruns/144758069705534586/1af63a17cfe3498f9e7d9b3f1f7f59e7/artifacts
+end_time: 1699680584192
+entry_point_name: ''
+experiment_id: '144758069705534586'
+lifecycle_stage: active
+run_id: 1af63a17cfe3498f9e7d9b3f1f7f59e7
+run_name: smiling-bass-977
+run_uuid: 1af63a17cfe3498f9e7d9b3f1f7f59e7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1699680058730
+status: 3
+tags: []
+user_id: relat

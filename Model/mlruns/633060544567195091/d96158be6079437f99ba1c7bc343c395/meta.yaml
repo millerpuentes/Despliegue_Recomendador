@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/relat/Documents/GitHub/Despliegues_MIAD/Proyecto/Despliegue_Recomendador/Model/mlruns/633060544567195091/d96158be6079437f99ba1c7bc343c395/artifacts
+end_time: 1699686151544
+entry_point_name: ''
+experiment_id: '633060544567195091'
+lifecycle_stage: active
+run_id: d96158be6079437f99ba1c7bc343c395
+run_name: marvelous-slug-520
+run_uuid: d96158be6079437f99ba1c7bc343c395
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1699685048431
+status: 3
+tags: []
+user_id: relat

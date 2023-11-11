@@ -1,0 +1,12 @@
+artifact_path: LDA_Lematizacion
+flavors:
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.3.2
+mlflow_version: 2.8.0
+model_size_bytes: 3759800
+model_uuid: 17c869cb4d604254911febe62d459b91
+run_id: 8f51b5f87bc64e02910a74d6363defb6
+utc_time_created: '2023-11-11 03:16:18.234425'

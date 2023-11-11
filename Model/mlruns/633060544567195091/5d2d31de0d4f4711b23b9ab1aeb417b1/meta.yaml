@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/relat/Documents/GitHub/Despliegues_MIAD/Proyecto/Despliegue_Recomendador/Model/mlruns/633060544567195091/5d2d31de0d4f4711b23b9ab1aeb417b1/artifacts
+end_time: 1699680595772
+entry_point_name: ''
+experiment_id: '633060544567195091'
+lifecycle_stage: active
+run_id: 5d2d31de0d4f4711b23b9ab1aeb417b1
+run_name: spiffy-lamb-801
+run_uuid: 5d2d31de0d4f4711b23b9ab1aeb417b1
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1699680031148
+status: 3
+tags: []
+user_id: relat

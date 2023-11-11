@@ -1,0 +1,16 @@
+artifact_uri: file:///C:/Users/relat/Documents/GitHub/Despliegues_MIAD/Proyecto/Despliegue_Recomendador/Model/mlruns/714934750370939689/8ce95c4e052b497aae5eddb5586770b4/artifacts
+deleted_time: 1699704809957
+end_time: null
+entry_point_name: ''
+experiment_id: '714934750370939689'
+lifecycle_stage: deleted
+run_id: 8ce95c4e052b497aae5eddb5586770b4
+run_name: abrasive-sponge-649
+run_uuid: 8ce95c4e052b497aae5eddb5586770b4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1699664769979
+status: 1
+tags: []
+user_id: relat

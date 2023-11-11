@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/relat/Documents/GitHub/Despliegues_MIAD/Proyecto/Despliegue_Recomendador/Model/mlruns/144758069705534586/ddf4992e8b7342a5bfd8dea447ab5416/artifacts
+end_time: 1699673254812
+entry_point_name: ''
+experiment_id: '144758069705534586'
+lifecycle_stage: active
+run_id: ddf4992e8b7342a5bfd8dea447ab5416
+run_name: enchanting-lamb-25
+run_uuid: ddf4992e8b7342a5bfd8dea447ab5416
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1699672687979
+status: 3
+tags: []
+user_id: relat

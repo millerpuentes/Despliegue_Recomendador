@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/relat/Documents/GitHub/Despliegues_MIAD/Proyecto/Despliegue_Recomendador/Model/mlruns/633060544567195091/257bb611fd2c43bfb136c4c7fdbfb52a/artifacts
+end_time: 1699675963716
+entry_point_name: ''
+experiment_id: '633060544567195091'
+lifecycle_stage: active
+run_id: 257bb611fd2c43bfb136c4c7fdbfb52a
+run_name: clean-yak-882
+run_uuid: 257bb611fd2c43bfb136c4c7fdbfb52a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1699675288312
+status: 3
+tags: []
+user_id: relat

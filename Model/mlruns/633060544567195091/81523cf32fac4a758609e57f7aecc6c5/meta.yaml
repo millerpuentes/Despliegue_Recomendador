@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/relat/Documents/GitHub/Despliegues_MIAD/Proyecto/Despliegue_Recomendador/Model/mlruns/633060544567195091/81523cf32fac4a758609e57f7aecc6c5/artifacts
+end_time: 1699684102844
+entry_point_name: ''
+experiment_id: '633060544567195091'
+lifecycle_stage: active
+run_id: 81523cf32fac4a758609e57f7aecc6c5
+run_name: stylish-trout-804
+run_uuid: 81523cf32fac4a758609e57f7aecc6c5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1699683327542
+status: 3
+tags: []
+user_id: relat

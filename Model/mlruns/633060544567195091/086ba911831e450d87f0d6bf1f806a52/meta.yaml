@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/relat/Documents/GitHub/Despliegues_MIAD/Proyecto/Despliegue_Recomendador/Model/mlruns/633060544567195091/086ba911831e450d87f0d6bf1f806a52/artifacts
+end_time: 1699681244695
+entry_point_name: ''
+experiment_id: '633060544567195091'
+lifecycle_stage: active
+run_id: 086ba911831e450d87f0d6bf1f806a52
+run_name: clean-goat-159
+run_uuid: 086ba911831e450d87f0d6bf1f806a52
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1699680595779
+status: 3
+tags: []
+user_id: relat
