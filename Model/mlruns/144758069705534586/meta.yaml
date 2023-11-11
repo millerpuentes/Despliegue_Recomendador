@@ -1,0 +1,6 @@
+artifact_location: file:///C:/Users/relat/Documents/GitHub/Despliegues_MIAD/Proyecto/Despliegue_Recomendador/Model/mlruns/144758069705534586
+creation_time: 1699666277681
+experiment_id: '144758069705534586'
+last_update_time: 1699666277681
+lifecycle_stage: active
+name: LDA_Clasificador_lematizacion

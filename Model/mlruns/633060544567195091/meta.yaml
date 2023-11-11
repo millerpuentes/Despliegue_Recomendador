@@ -1,0 +1,6 @@
+artifact_location: file:///C:/Users/relat/Documents/GitHub/Despliegues_MIAD/Proyecto/Despliegue_Recomendador/Model/mlruns/633060544567195091
+creation_time: 1699666333417
+experiment_id: '633060544567195091'
+last_update_time: 1699666333417
+lifecycle_stage: active
+name: LDA_Clasificador_stemming

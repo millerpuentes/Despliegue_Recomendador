@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/relat/Documents/GitHub/Despliegues_MIAD/Proyecto/Despliegue_Recomendador/Model/mlruns/144758069705534586/17966ffc0a1144ba83a1eb4cc6270e33/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '144758069705534586'
+lifecycle_stage: active
+run_id: 17966ffc0a1144ba83a1eb4cc6270e33
+run_name: enchanting-goose-103
+run_uuid: 17966ffc0a1144ba83a1eb4cc6270e33
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1699666278024
+status: 1
+tags: []
+user_id: relat
