@@ -1,8 +1,9 @@
 artifact_uri: file:///C:/Users/relat/Documents/GitHub/Despliegues_MIAD/Proyecto/Despliegue_Recomendador/Model/mlruns/714934750370939689/6de66280b5204d0ca56087c9cb6544c7/artifacts
+deleted_time: 1699657990534
 end_time: 1699583021128
 entry_point_name: ''
 experiment_id: '714934750370939689'
-lifecycle_stage: active
+lifecycle_stage: deleted
 run_id: 6de66280b5204d0ca56087c9cb6544c7
 run_name: fearless-snail-231
 run_uuid: 6de66280b5204d0ca56087c9cb6544c7

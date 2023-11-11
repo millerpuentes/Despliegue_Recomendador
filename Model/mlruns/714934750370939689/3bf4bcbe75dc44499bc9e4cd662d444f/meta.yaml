@@ -1,8 +1,9 @@
 artifact_uri: file:///C:/Users/relat/Documents/GitHub/Despliegues_MIAD/Proyecto/Despliegue_Recomendador/Model/mlruns/714934750370939689/3bf4bcbe75dc44499bc9e4cd662d444f/artifacts
+deleted_time: 1699657990535
 end_time: 1699584636768
 entry_point_name: ''
 experiment_id: '714934750370939689'
-lifecycle_stage: active
+lifecycle_stage: deleted
 run_id: 3bf4bcbe75dc44499bc9e4cd662d444f
 run_name: nebulous-shad-171
 run_uuid: 3bf4bcbe75dc44499bc9e4cd662d444f

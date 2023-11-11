@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/relat/Documents/GitHub/Despliegues_MIAD/Proyecto/Despliegue_Recomendador/Model/mlruns/714934750370939689/16aa2ae5eb90445fb86e0fcaaf3c369f/artifacts
+end_time: 1699661668277
+entry_point_name: ''
+experiment_id: '714934750370939689'
+lifecycle_stage: active
+run_id: 16aa2ae5eb90445fb86e0fcaaf3c369f
+run_name: silent-koi-129
+run_uuid: 16aa2ae5eb90445fb86e0fcaaf3c369f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1699661256099
+status: 3
+tags: []
+user_id: relat

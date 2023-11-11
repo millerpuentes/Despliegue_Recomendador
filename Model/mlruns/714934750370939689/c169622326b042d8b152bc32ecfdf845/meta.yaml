@@ -1,0 +1,16 @@
+artifact_uri: file:///C:/Users/relat/Documents/GitHub/Despliegues_MIAD/Proyecto/Despliegue_Recomendador/Model/mlruns/714934750370939689/c169622326b042d8b152bc32ecfdf845/artifacts
+deleted_time: 1699661917156
+end_time: 1699660217857
+entry_point_name: ''
+experiment_id: '714934750370939689'
+lifecycle_stage: deleted
+run_id: c169622326b042d8b152bc32ecfdf845
+run_name: fortunate-lamb-425
+run_uuid: c169622326b042d8b152bc32ecfdf845
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1699659851939
+status: 4
+tags: []
+user_id: relat

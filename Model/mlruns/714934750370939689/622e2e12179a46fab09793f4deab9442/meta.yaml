@@ -1,8 +1,9 @@
 artifact_uri: file:///C:/Users/relat/Documents/GitHub/Despliegues_MIAD/Proyecto/Despliegue_Recomendador/Model/mlruns/714934750370939689/622e2e12179a46fab09793f4deab9442/artifacts
+deleted_time: 1699657990524
 end_time: null
 entry_point_name: ''
 experiment_id: '714934750370939689'
-lifecycle_stage: active
+lifecycle_stage: deleted
 run_id: 622e2e12179a46fab09793f4deab9442
 run_name: carefree-stork-467
 run_uuid: 622e2e12179a46fab09793f4deab9442

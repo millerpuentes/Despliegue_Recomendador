@@ -1,0 +1,16 @@
+artifact_uri: file:///C:/Users/relat/Documents/GitHub/Despliegues_MIAD/Proyecto/Despliegue_Recomendador/Model/mlruns/714934750370939689/419ea44d9cbe43a092edb2b11faf09f7/artifacts
+deleted_time: 1699661917155
+end_time: 1699658746410
+entry_point_name: ''
+experiment_id: '714934750370939689'
+lifecycle_stage: deleted
+run_id: 419ea44d9cbe43a092edb2b11faf09f7
+run_name: nosy-tern-541
+run_uuid: 419ea44d9cbe43a092edb2b11faf09f7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1699658451489
+status: 4
+tags: []
+user_id: relat

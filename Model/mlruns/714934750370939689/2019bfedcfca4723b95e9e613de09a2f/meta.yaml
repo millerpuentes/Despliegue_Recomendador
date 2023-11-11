@@ -1,8 +1,9 @@
 artifact_uri: file:///C:/Users/relat/Documents/GitHub/Despliegues_MIAD/Proyecto/Despliegue_Recomendador/Model/mlruns/714934750370939689/2019bfedcfca4723b95e9e613de09a2f/artifacts
+deleted_time: 1699657990514
 end_time: null
 entry_point_name: ''
 experiment_id: '714934750370939689'
-lifecycle_stage: active
+lifecycle_stage: deleted
 run_id: 2019bfedcfca4723b95e9e613de09a2f
 run_name: efficient-vole-779
 run_uuid: 2019bfedcfca4723b95e9e613de09a2f

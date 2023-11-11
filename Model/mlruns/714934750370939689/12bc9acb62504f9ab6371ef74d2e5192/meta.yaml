@@ -1,8 +1,9 @@
 artifact_uri: file:///C:/Users/relat/Documents/GitHub/Despliegues_MIAD/Proyecto/Despliegue_Recomendador/Model/mlruns/714934750370939689/12bc9acb62504f9ab6371ef74d2e5192/artifacts
+deleted_time: 1699657990534
 end_time: 1699582173150
 entry_point_name: ''
 experiment_id: '714934750370939689'
-lifecycle_stage: active
+lifecycle_stage: deleted
 run_id: 12bc9acb62504f9ab6371ef74d2e5192
 run_name: gentle-wolf-599
 run_uuid: 12bc9acb62504f9ab6371ef74d2e5192

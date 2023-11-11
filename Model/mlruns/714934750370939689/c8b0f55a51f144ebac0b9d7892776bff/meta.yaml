@@ -1,8 +1,9 @@
 artifact_uri: file:///C:/Users/relat/Documents/GitHub/Despliegues_MIAD/Proyecto/Despliegue_Recomendador/Model/mlruns/714934750370939689/c8b0f55a51f144ebac0b9d7892776bff/artifacts
+deleted_time: 1699657990460
 end_time: null
 entry_point_name: ''
 experiment_id: '714934750370939689'
-lifecycle_stage: active
+lifecycle_stage: deleted
 run_id: c8b0f55a51f144ebac0b9d7892776bff
 run_name: stylish-calf-461
 run_uuid: c8b0f55a51f144ebac0b9d7892776bff

@@ -1,0 +1,16 @@
+artifact_uri: file:///C:/Users/relat/Documents/GitHub/Despliegues_MIAD/Proyecto/Despliegue_Recomendador/Model/mlruns/714934750370939689/795668a437cd4b6e93d95398d82129de/artifacts
+deleted_time: 1699657990541
+end_time: 1699653257301
+entry_point_name: ''
+experiment_id: '714934750370939689'
+lifecycle_stage: deleted
+run_id: 795668a437cd4b6e93d95398d82129de
+run_name: dashing-rat-791
+run_uuid: 795668a437cd4b6e93d95398d82129de
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1699652528581
+status: 3
+tags: []
+user_id: relat

@@ -1,0 +1,16 @@
+artifact_uri: file:///C:/Users/relat/Documents/GitHub/Despliegues_MIAD/Proyecto/Despliegue_Recomendador/Model/mlruns/714934750370939689/6948228a992d41ddbb7eb4c30157d110/artifacts
+deleted_time: 1699663345726
+end_time: 1699653949401
+entry_point_name: ''
+experiment_id: '714934750370939689'
+lifecycle_stage: deleted
+run_id: 6948228a992d41ddbb7eb4c30157d110
+run_name: enthused-hound-831
+run_uuid: 6948228a992d41ddbb7eb4c30157d110
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1699653390875
+status: 3
+tags: []
+user_id: relat

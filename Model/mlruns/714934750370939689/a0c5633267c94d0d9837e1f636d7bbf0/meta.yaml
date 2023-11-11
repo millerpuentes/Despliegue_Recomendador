@@ -1,8 +1,9 @@
 artifact_uri: file:///C:/Users/relat/Documents/GitHub/Despliegues_MIAD/Proyecto/Despliegue_Recomendador/Model/mlruns/714934750370939689/a0c5633267c94d0d9837e1f636d7bbf0/artifacts
+deleted_time: 1699657990485
 end_time: null
 entry_point_name: ''
 experiment_id: '714934750370939689'
-lifecycle_stage: active
+lifecycle_stage: deleted
 run_id: a0c5633267c94d0d9837e1f636d7bbf0
 run_name: enchanting-kite-844
 run_uuid: a0c5633267c94d0d9837e1f636d7bbf0

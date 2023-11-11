@@ -1,8 +1,9 @@
 artifact_uri: file:///C:/Users/relat/Documents/GitHub/Despliegues_MIAD/Proyecto/Despliegue_Recomendador/Model/mlruns/714934750370939689/dafb156ff2334c848993d90edf0488bd/artifacts
+deleted_time: 1699657990462
 end_time: 1699548523848
 entry_point_name: ''
 experiment_id: '714934750370939689'
-lifecycle_stage: active
+lifecycle_stage: deleted
 run_id: dafb156ff2334c848993d90edf0488bd
 run_name: gentle-donkey-528
 run_uuid: dafb156ff2334c848993d90edf0488bd

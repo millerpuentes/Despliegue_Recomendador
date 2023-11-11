@@ -1,0 +1,16 @@
+artifact_uri: file:///C:/Users/relat/Documents/GitHub/Despliegues_MIAD/Proyecto/Despliegue_Recomendador/Model/mlruns/714934750370939689/5d9e2ad676fe4fafabece8b6cc93358a/artifacts
+deleted_time: 1699661917156
+end_time: 1699659404428
+entry_point_name: ''
+experiment_id: '714934750370939689'
+lifecycle_stage: deleted
+run_id: 5d9e2ad676fe4fafabece8b6cc93358a
+run_name: classy-roo-875
+run_uuid: 5d9e2ad676fe4fafabece8b6cc93358a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1699659116905
+status: 4
+tags: []
+user_id: relat

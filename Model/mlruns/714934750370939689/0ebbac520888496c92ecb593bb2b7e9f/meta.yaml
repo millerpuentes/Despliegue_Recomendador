@@ -1,8 +1,9 @@
 artifact_uri: file:///C:/Users/relat/Documents/GitHub/Despliegues_MIAD/Proyecto/Despliegue_Recomendador/Model/mlruns/714934750370939689/0ebbac520888496c92ecb593bb2b7e9f/artifacts
+deleted_time: 1699657990476
 end_time: null
 entry_point_name: ''
 experiment_id: '714934750370939689'
-lifecycle_stage: active
+lifecycle_stage: deleted
 run_id: 0ebbac520888496c92ecb593bb2b7e9f
 run_name: resilient-hawk-499
 run_uuid: 0ebbac520888496c92ecb593bb2b7e9f

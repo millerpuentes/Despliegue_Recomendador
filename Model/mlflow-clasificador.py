@@ -3,7 +3,6 @@
 """
 @author: Equipo 7 - DSA
 """
-
 # Importaciones aquí
 import pandas as pd
 import numpy as np
@@ -14,16 +13,7 @@ from gensim.models import LdaModel
 from gensim.models import CoherenceModel
 import nltk
 import mlflow
-import mlflow.sklearn
 
-
-#Empieza el desarrollo
-
-# Asegúrate de que estas descargas de nltk se ejecuten una sola vez.
-nltk.download('punkt')
-nltk.download('wordnet')
-nltk.download('omw-1.4')
-nltk.download('stopwords')
 
 def main():
     # Cargar el modelo de spacy para el español
@@ -54,51 +44,53 @@ def main():
     # registre el experimento
     experiment = mlflow.set_experiment("LDA_Clasificador") 
 
-    with mlflow.start_run(experiment_id=experiment.experiment_id):
-        # defina los parámetros del modelo
-        corpus = corpus_stemming
-        id2word = dictionary_stemming
-        num_topics = 16
-        chunksize = 1000
-        passes = 20
-        iterations = 400
-        alpha = 'auto'
-        eta = 'auto'
-        random_state = 123
-        eval_every = None
+    # Definir valores para iterar
+    chunksize_values = [500, 1000, 1500]
+    num_topics_values = [15, 20, 25]
+    passes_values = [15, 20, 25]
 
-        # Cree el modelo con los parámetros definidos y entrénelo
-        LDA_stemming = LdaModel(
-            corpus=corpus,
-            id2word=id2word,
-            num_topics=num_topics,
-            chunksize=chunksize,
-            passes=passes,
-            iterations=iterations,
-            alpha=alpha,
-            eta=eta,
-            random_state=random_state,
-            eval_every=eval_every
-        )
-  
-        # Registre los parámetros
-        mlflow.log_param("num_topics", num_topics)
-        mlflow.log_param("chunksize", chunksize)
-        mlflow.log_param("passes", passes)
-  
-        # Registre el modelo
-        mlflow.sklearn.log_model(LDA_stemming, "LDA_stemming_1")
-  
-        # Cree y registre la métrica de interés   
-        cm = CoherenceModel(model=LDA_stemming, texts=tokens_stemming, dictionary=dictionary_stemming, coherence='c_v')
-        coherence = cm.get_coherence()
-        mlflow.log_metric("coherence", coherence)
+    for chunksize in chunksize_values:
+        for num_topics in num_topics_values:
+            for passes in passes_values:
+                # Configurar parámetros del modelo
+                lda_params = {
+                    "corpus": corpus_stemming,
+                    "id2word": dictionary_stemming,
+                    "num_topics": num_topics,
+                    "chunksize": chunksize,
+                    "passes": passes,
+                    "iterations": 400,
+                    "alpha": 'auto',
+                    "eta": 'auto',
+                    "random_state": 123,
+                    "eval_every": None
+                }
+                with mlflow.start_run(experiment_id=experiment.experiment_id):
+                    # Cree el modelo con los parámetros definidos y entrénelo
+                    LDA_stemming = LdaModel(**lda_params)
 
-        perplexity = LDA_stemming.log_perplexity(corpus)
-        mlflow.log_metric("perplexity", perplexity)
-    
-        print(perplexity)
-        print(coherence)
+                    # Registre los parámetros
+                    mlflow.log_param("num_topics", num_topics)
+                    mlflow.log_param("chunksize", chunksize)
+                    mlflow.log_param("passes", passes)
+
+                    # Registre el modelo
+                    mlflow.sklearn.log_model(LDA_stemming, "LDA_stemming_1")
+                    
+                    # Cree y registre la métrica de interés
+
+                    # Coherencia   
+                    cm = CoherenceModel(model=LDA_stemming, texts=tokens_stemming, dictionary=dictionary_stemming, coherence='c_v')
+                    coherence = cm.get_coherence()
+                    mlflow.log_metric("Coherencia", coherence)
+                    print(coherence)
+
+                    
+                    # Perplejidad
+                    perplexity = np.exp2(-LDA_stemming.log_perplexity(corpus_stemming))
+                    mlflow.log_metric("Perplejidad", perplexity)        
+                    print(perplexity)
+        
 
 # Este bloque se asegura de que main() se ejecute solo cuando este script se corre directamente.
 if __name__ == '__main__':

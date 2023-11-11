@@ -1,8 +1,9 @@
 artifact_uri: file:///C:/Users/relat/Documents/GitHub/Despliegues_MIAD/Proyecto/Despliegue_Recomendador/Model/mlruns/714934750370939689/736f0bb07ee7424e807658c8dc4d5fa3/artifacts
+deleted_time: 1699657990461
 end_time: 1699538505716
 entry_point_name: ''
 experiment_id: '714934750370939689'
-lifecycle_stage: active
+lifecycle_stage: deleted
 run_id: 736f0bb07ee7424e807658c8dc4d5fa3
 run_name: crawling-sow-122
 run_uuid: 736f0bb07ee7424e807658c8dc4d5fa3

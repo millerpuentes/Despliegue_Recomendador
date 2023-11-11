@@ -1,8 +1,9 @@
 artifact_uri: file:///C:/Users/relat/Documents/GitHub/Despliegues_MIAD/Proyecto/Despliegue_Recomendador/Model/mlruns/714934750370939689/0781e301bcb74d56abbc566da6c3a694/artifacts
+deleted_time: 1699657990494
 end_time: 1699578580632
 entry_point_name: ''
 experiment_id: '714934750370939689'
-lifecycle_stage: active
+lifecycle_stage: deleted
 run_id: 0781e301bcb74d56abbc566da6c3a694
 run_name: ambitious-jay-95
 run_uuid: 0781e301bcb74d56abbc566da6c3a694

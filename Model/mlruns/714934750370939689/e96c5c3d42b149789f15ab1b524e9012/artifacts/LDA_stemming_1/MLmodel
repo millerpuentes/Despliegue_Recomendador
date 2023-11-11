@@ -1,0 +1,12 @@
+artifact_path: LDA_stemming_1
+flavors:
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.3.2
+mlflow_version: 2.8.0
+model_size_bytes: 2037748
+model_uuid: dd6c4607376f408e83a49bd01fc0428d
+run_id: e96c5c3d42b149789f15ab1b524e9012
+utc_time_created: '2023-11-11 00:20:54.326045'

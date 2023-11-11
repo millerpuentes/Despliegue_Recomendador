@@ -1,8 +1,9 @@
 artifact_uri: file:///C:/Users/relat/Documents/GitHub/Despliegues_MIAD/Proyecto/Despliegue_Recomendador/Model/mlruns/714934750370939689/662676276e964f0ea29fc5ac67cf1eec/artifacts
+deleted_time: 1699657990514
 end_time: null
 entry_point_name: ''
 experiment_id: '714934750370939689'
-lifecycle_stage: active
+lifecycle_stage: deleted
 run_id: 662676276e964f0ea29fc5ac67cf1eec
 run_name: adaptable-ray-193
 run_uuid: 662676276e964f0ea29fc5ac67cf1eec

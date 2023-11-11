@@ -1,0 +1,16 @@
+artifact_uri: file:///C:/Users/relat/Documents/GitHub/Despliegues_MIAD/Proyecto/Despliegue_Recomendador/Model/mlruns/714934750370939689/5e91c0254bb345399b2937980ded0670/artifacts
+deleted_time: 1699663345723
+end_time: 1699654867406
+entry_point_name: ''
+experiment_id: '714934750370939689'
+lifecycle_stage: deleted
+run_id: 5e91c0254bb345399b2937980ded0670
+run_name: clean-bear-824
+run_uuid: 5e91c0254bb345399b2937980ded0670
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1699654198034
+status: 3
+tags: []
+user_id: relat

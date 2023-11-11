@@ -1,8 +1,9 @@
 artifact_uri: file:///C:/Users/relat/Documents/GitHub/Despliegues_MIAD/Proyecto/Despliegue_Recomendador/Model/mlruns/714934750370939689/16bc3230d2b34bc8865b1c20d39bd8dd/artifacts
+deleted_time: 1699657990462
 end_time: null
 entry_point_name: ''
 experiment_id: '714934750370939689'
-lifecycle_stage: active
+lifecycle_stage: deleted
 run_id: 16bc3230d2b34bc8865b1c20d39bd8dd
 run_name: incongruous-pig-953
 run_uuid: 16bc3230d2b34bc8865b1c20d39bd8dd

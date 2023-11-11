@@ -1,8 +1,9 @@
 artifact_uri: file:///C:/Users/relat/Documents/GitHub/Despliegues_MIAD/Proyecto/Despliegue_Recomendador/Model/mlruns/714934750370939689/09bd368fc4484655a343b76850963cb1/artifacts
+deleted_time: 1699657990478
 end_time: 1699557149069
 entry_point_name: ''
 experiment_id: '714934750370939689'
-lifecycle_stage: active
+lifecycle_stage: deleted
 run_id: 09bd368fc4484655a343b76850963cb1
 run_name: casual-turtle-914
 run_uuid: 09bd368fc4484655a343b76850963cb1

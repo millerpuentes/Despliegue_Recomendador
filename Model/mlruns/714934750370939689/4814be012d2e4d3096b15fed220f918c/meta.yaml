@@ -1,8 +1,9 @@
 artifact_uri: file:///C:/Users/relat/Documents/GitHub/Despliegues_MIAD/Proyecto/Despliegue_Recomendador/Model/mlruns/714934750370939689/4814be012d2e4d3096b15fed220f918c/artifacts
+deleted_time: 1699657990523
 end_time: 1699582117561
 entry_point_name: ''
 experiment_id: '714934750370939689'
-lifecycle_stage: active
+lifecycle_stage: deleted
 run_id: 4814be012d2e4d3096b15fed220f918c
 run_name: fortunate-stork-820
 run_uuid: 4814be012d2e4d3096b15fed220f918c

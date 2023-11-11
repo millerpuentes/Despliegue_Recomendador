@@ -1,8 +1,9 @@
 artifact_uri: file:///C:/Users/relat/Documents/GitHub/Despliegues_MIAD/Proyecto/Despliegue_Recomendador/Model/mlruns/714934750370939689/4d98dc28f0264a859fe4d29c2558b399/artifacts
+deleted_time: 1699657990485
 end_time: 1699560009994
 entry_point_name: ''
 experiment_id: '714934750370939689'
-lifecycle_stage: active
+lifecycle_stage: deleted
 run_id: 4d98dc28f0264a859fe4d29c2558b399
 run_name: stately-worm-507
 run_uuid: 4d98dc28f0264a859fe4d29c2558b399

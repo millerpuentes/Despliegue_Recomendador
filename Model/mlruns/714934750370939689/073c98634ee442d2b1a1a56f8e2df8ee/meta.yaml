@@ -1,8 +1,9 @@
 artifact_uri: file:///C:/Users/relat/Documents/GitHub/Despliegues_MIAD/Proyecto/Despliegue_Recomendador/Model/mlruns/714934750370939689/073c98634ee442d2b1a1a56f8e2df8ee/artifacts
+deleted_time: 1699657990493
 end_time: 1699576129536
 entry_point_name: ''
 experiment_id: '714934750370939689'
-lifecycle_stage: active
+lifecycle_stage: deleted
 run_id: 073c98634ee442d2b1a1a56f8e2df8ee
 run_name: sneaky-gnu-448
 run_uuid: 073c98634ee442d2b1a1a56f8e2df8ee

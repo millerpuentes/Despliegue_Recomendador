@@ -1,8 +1,9 @@
 artifact_uri: file:///C:/Users/relat/Documents/GitHub/Despliegues_MIAD/Proyecto/Despliegue_Recomendador/Model/mlruns/714934750370939689/77de8c4339f9416c85d67bffd911e83c/artifacts
+deleted_time: 1699657990485
 end_time: 1699561279274
 entry_point_name: ''
 experiment_id: '714934750370939689'
-lifecycle_stage: active
+lifecycle_stage: deleted
 run_id: 77de8c4339f9416c85d67bffd911e83c
 run_name: brawny-koi-533
 run_uuid: 77de8c4339f9416c85d67bffd911e83c

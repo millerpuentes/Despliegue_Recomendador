@@ -1,8 +1,9 @@
 artifact_uri: file:///C:/Users/relat/Documents/GitHub/Despliegues_MIAD/Proyecto/Despliegue_Recomendador/Model/mlruns/714934750370939689/478165a8b63f40be882bba61877d7e9d/artifacts
+deleted_time: 1699657990523
 end_time: 1699580528086
 entry_point_name: ''
 experiment_id: '714934750370939689'
-lifecycle_stage: active
+lifecycle_stage: deleted
 run_id: 478165a8b63f40be882bba61877d7e9d
 run_name: judicious-gull-145
 run_uuid: 478165a8b63f40be882bba61877d7e9d

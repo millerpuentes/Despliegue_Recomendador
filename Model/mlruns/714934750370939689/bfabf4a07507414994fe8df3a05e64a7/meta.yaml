@@ -1,8 +1,9 @@
 artifact_uri: file:///C:/Users/relat/Documents/GitHub/Despliegues_MIAD/Proyecto/Despliegue_Recomendador/Model/mlruns/714934750370939689/bfabf4a07507414994fe8df3a05e64a7/artifacts
+deleted_time: 1699657990513
 end_time: 1699580170426
 entry_point_name: ''
 experiment_id: '714934750370939689'
-lifecycle_stage: active
+lifecycle_stage: deleted
 run_id: bfabf4a07507414994fe8df3a05e64a7
 run_name: crawling-yak-300
 run_uuid: bfabf4a07507414994fe8df3a05e64a7

@@ -1,8 +1,9 @@
 artifact_uri: file:///C:/Users/relat/Documents/GitHub/Despliegues_MIAD/Proyecto/Despliegue_Recomendador/Model/mlruns/714934750370939689/b1a3c377dd50486f980ccd9cc36bb25f/artifacts
+deleted_time: 1699657990495
 end_time: 1699578549015
 entry_point_name: ''
 experiment_id: '714934750370939689'
-lifecycle_stage: active
+lifecycle_stage: deleted
 run_id: b1a3c377dd50486f980ccd9cc36bb25f
 run_name: dazzling-midge-553
 run_uuid: b1a3c377dd50486f980ccd9cc36bb25f

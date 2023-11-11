@@ -1,8 +1,9 @@
 artifact_uri: file:///C:/Users/relat/Documents/GitHub/Despliegues_MIAD/Proyecto/Despliegue_Recomendador/Model/mlruns/714934750370939689/49596dec1f564676b149e1910cde2580/artifacts
+deleted_time: 1699657990504
 end_time: 1699578756073
 entry_point_name: ''
 experiment_id: '714934750370939689'
-lifecycle_stage: active
+lifecycle_stage: deleted
 run_id: 49596dec1f564676b149e1910cde2580
 run_name: incongruous-carp-935
 run_uuid: 49596dec1f564676b149e1910cde2580
