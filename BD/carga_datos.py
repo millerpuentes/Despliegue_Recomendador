@@ -1,13 +1,21 @@
 import psycopg2
 from psycopg2 import sql
-import pandas as pd
+import pandas as 
+from dotenv import load_dotenv
+import os
 
-# Configuración de la conexión a la base de datos
-USER = "postgres"
-PASSWORD = "Hoy_14_11_2023"
-HOST = "proyecto.ctfb7fnoyrsf.us-east-1.rds.amazonaws.com"
-PORT = "5432"
-DBNAME = "postgres"
+# Configuracion de la base de datos
+load_dotenv('app.env')
+DB_CONFIG = {
+    'user': os.getenv('USER'),
+    'password': os.getenv('PASSWORD'),
+    'host': os.getenv('HOST'),
+    'port': os.getenv('PORT'),
+    'dbname': os.getenv('DBNAME'),
+}
+
+
+
 
 """ Se cargan los datos de Stemming"""
 # Ruta del archivo CSV
@@ -30,10 +38,7 @@ csv_file_path = '../Data/df_clientes_BD.csv'
 table_name = "bd_clientes"
 #Nit,Nombre,Sector
 
-# Crear la conexión
-connection = psycopg2.connect(
-    dbname=DBNAME, user=USER, password=PASSWORD, host=HOST, port=PORT
-)
+connection = psycopg2.connect(**DB_CONFIG)
 
 # Crear un cursor
 cursor = connection.cursor()
@@ -44,7 +49,7 @@ cursor.execute(drop_table_query)
 connection.commit()
 
 # Leer el CSV con pandas
-df = pd.read_csv(csv_file_path)
+#df = pd.read_csv(csv_file_path)
 
 #Fecha,Tema_noticia,Titulo_noticia,Url
 # Crear la tabla con tipos de datos específicos

@@ -1,22 +1,20 @@
 import psycopg2
 from psycopg2 import sql
+from dotenv import load_dotenv
+import os
 
-# Configuración de la conexión a la base de datos
-USER = "postgres"
-PASSWORD = "Hoy_14_11_2023"
-HOST = "proyecto.ctfb7fnoyrsf.us-east-1.rds.amazonaws.com"
-PORT = "5432"
-DBNAME = "postgres"
-
-# Declarar variables fuera del bloque try para que tengan un alcance más amplio
-connection = None
-cursor = None
-
+# Configuracion de la base de datos
+load_dotenv('app.env')
+DB_CONFIG = {
+    'user': os.getenv('USER'),
+    'password': os.getenv('PASSWORD'),
+    'host': os.getenv('HOST'),
+    'port': os.getenv('PORT'),
+    'dbname': os.getenv('DBNAME'),
+}
 try:
     # Crear la conexión
-    connection = psycopg2.connect(
-        dbname=DBNAME, user=USER, password=PASSWORD, host=HOST, port=PORT, sslmode='require'
-    )
+    connection = psycopg2.connect(**DB_CONFIG)
 
     # Crear un cursor
     cursor = connection.cursor()

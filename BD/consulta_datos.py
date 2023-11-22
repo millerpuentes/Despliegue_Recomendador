@@ -1,22 +1,26 @@
 import psycopg2
 from psycopg2 import sql
+from dotenv import load_dotenv
+import os
 
-# Configuración de la conexión a la base de datos
-USER = "postgres"
-PASSWORD = "Hoy_14_11_2023"
-HOST = "proyecto.ctfb7fnoyrsf.us-east-1.rds.amazonaws.com"
-PORT = "5432"
-DBNAME = "postgres"
+# Configuracion de la base de datos
+load_dotenv('app.env')
+DB_CONFIG = {
+    'user': os.getenv('USER'),
+    'password': os.getenv('PASSWORD'),
+    'host': os.getenv('HOST'),
+    'port': os.getenv('PORT'),
+    'dbname': os.getenv('DBNAME'),
+}
+
 
 # Nombre de la tabla en la base de datos
-#table_name = "bd_stemming"
+table_name = "bd_stemming"
 #table_name = "bd_lematizacion"
-table_name = "bd_clientes"
+#table_name = "bd_clientes"
 
 # Crear la conexión
-connection = psycopg2.connect(
-    dbname=DBNAME, user=USER, password=PASSWORD, host=HOST, port=PORT
-)
+connection = psycopg2.connect(**DB_CONFIG)
 
 # Crear un cursor
 cursor = connection.cursor()
@@ -29,18 +33,18 @@ cursor.execute(select_query)
 results = cursor.fetchall()
 
 # Imprimir los resultados de manera más estructurada
-#print("Resultados de la tabla '{}':".format(table_name))
-#print("{:<15} {:<20} {:<50} {:<}".format("Fecha", "Tema", "Título", "URL"))
-#print("-" * 120)
+print("Resultados de la tabla '{}':".format(table_name))
+print("{:<15} {:<20} {:<50} {:<}".format("Fecha", "Tema", "Título", "URL"))
+print("-" * 120)
 
-#for row in results:
-#    print("{:<15} {:<20} {:<50} {:<}".format(row[0].strftime("%Y-%m-%d"), row[1], row[2], row[3]))
+for row in results:
+    print("{:<15} {:<20} {:<50} {:<}".format(row[0].strftime("%Y-%m-%d"), row[1], row[2], row[3]))
 
 
 # Imprimir los resultados de manera más estructurada
-print("Resultados de la tabla '{}':".format(table_name))
-print("{:<15} {:<20} {:<50}".format("Nit","Nombre","Sector"))
-print("-" * 120)
+#print("Resultados de la tabla '{}':".format(table_name))
+#print("{:<15} {:<20} {:<50}".format("Nit","Nombre","Sector"))
+#print("-" * 120)
 
 for row in results:
     print("{:<15} {:<20} {:<50}".format(row[0], row[1], row[2]))
