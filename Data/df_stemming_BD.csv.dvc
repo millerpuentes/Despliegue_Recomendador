@@ -1,0 +1,5 @@
+outs:
+- md5: 4f60ec64db58533310e6814525796afc
+  size: 4279239
+  hash: md5
+  path: df_stemming_BD.csv
