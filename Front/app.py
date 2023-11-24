@@ -225,7 +225,21 @@ def layout_Contexto():
                     textual predominante. La clusterización temática de las noticias se efectuó con el\
                     modelo LDA de Gensim, evaluando su eficacia tanto con textos lematizados como con\
                     Stemming. Se realizó además una recategorización de clientes para afinar las recomendaciones\
-                    según la relevancia temática para cada sector.", style={'textAlign': 'center', 'color': '#008080'})
+                    según la relevancia temática para cada sector.", style={'textAlign': 'center', 'color': '#008080'}),
+            html.Br(),       
+            html.Br(),  
+            html.Br(),    
+            html.H1("Impacto"), 
+            html.H6("La relevancia de este ejercicio analítico radica en fortalecer el conocimiento que el \
+                    banco tiene sobre sus clientes corporativos. Mediante el uso de técnicas de aprendizaje no \
+                    supervisado como el procesamiento de lenguaje natural (NLP), se busca diseñar un sistema de \
+                    recomendación de noticias que extraiga y categorice información relevante de medios de comunicación.\
+                     Se crea una herramienta analítica que sirva como una ventaja competitiva en el entendimiento profundo \
+                    del cliente. Esta iniciativa aprovecha la inteligencia artificial y el procesamiento de texto para\
+                     comprender el lenguaje humano y organizar automáticamente noticias de interés para los clientes. \
+                    Con este sistema de recomendación de noticias, se espera mejorar la experiencia del cliente al \
+                    proporcionarles información altamente relevante, lo que, a su vez, puede diferenciar a la empresa\
+                     en el mercado y fortalecer relaciones con los clientes corporativos.", style={'textAlign': 'center', 'color': '#008080'})
             # Agrega el resto del contenido de la página 2 aquí
         ]
     )
