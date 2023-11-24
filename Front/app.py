@@ -1,5 +1,6 @@
 import dash
 from dash import dcc, html
+import dash_labs as dl
 from dash.dependencies import Input, Output, State
 import dash_table
 import psycopg2
@@ -8,6 +9,8 @@ import os
 import pandas as pd
 from datetime import date
 import dash_bootstrap_components as dbc
+from dash_labs.plugins.pages import register_page
+
 
 # Configuracion de la base de datos
 load_dotenv('app.env')
@@ -27,7 +30,9 @@ sql_stemming = """SELECT * FROM bd_stemming"""
 cursor.execute(sql_stemming)
 data_stemming = cursor.fetchall()
 
+#nit="801004045"
 # Consulta a la base de datos bd_clientes
+#sql_clientes = """SELECT * FROM bd_clientes WHERE 0={}""".format(nit)
 sql_clientes = """SELECT * FROM bd_clientes"""
 cursor.execute(sql_clientes)
 data_clientes = cursor.fetchall()
@@ -35,19 +40,39 @@ data_clientes = cursor.fetchall()
 df_stemming = pd.DataFrame(data_stemming, columns=['Fecha', 'Tema_noticia', 'Titulo_noticia', 'Url'])
 df_clientes = pd.DataFrame(data_clientes, columns=['Nit', 'Nombre', 'Sector'])
 
-
+#df_stemming = pd.DataFrame(data_stemming)
+#df_clientes = pd.DataFrame(data_clientes)
 print(df_stemming) 
 print(df_clientes)
 
 resultados = pd.DataFrame([])
 
-        
-def create_layout():
-    return html.Div(
+""" ------------------------------------------- Layout ------------------------------------------"""
+def create_navbar():
+    navbar = dbc.NavbarSimple(
         children=[
+            dbc.NavItem(dbc.NavLink("Nosotros", href="/Nosotros")),
+            dbc.NavItem(dbc.NavLink("Contexto", href="/Contexto")),
+            # Agrega más enlaces según sea necesario
+        ],
+        brand="Recomendador",
+        brand_href="/",
+        color="primary",
+        dark=True,
+        style={'fontSize': '25px'}
+    )
+    return navbar
+
+def create_layout():
+    layout = html.Div(
+        children=[
+            create_navbar(),  # Agrega la barra de navegación
+            dbc.Container(
+                children=[
+            html.Br(),
             dbc.Row(
                 dbc.Col(
-                    html.H2(
+                    html.H1(
                         "Bienvenido a tu recomendador de noticias DSA",
                         style={'textAlign': 'center', 'color': '#0380C4'},
                     ),
@@ -78,7 +103,7 @@ def create_layout():
                 initial_visible_month=date(2022, 7, 30),
                 date=date(2022, 7, 30),
                 ),
-            html.Hr(),
+            html.Br(),
             html.Br(),
             html.H6("Ingrese un Número de noticias que desea ver"),
             dcc.Input(id='not-input', type='text', value=''),
@@ -86,17 +111,116 @@ def create_layout():
             html.Br(),
             dbc.Button("Enviar", id="enviar-button"),
             html.Br(),
-            html.Br(),
-            html.H6("Noticias"),
+            html.Hr(),
+            html.H2("Noticias"),
             #dash_table.DataTable(id='table-resultados', data=resultados.to_dict('records'), page_size=20, style_table={'overflowX': 'auto'}),
-            dash_table.DataTable(id='table-resultados', data=resultados.to_dict('records'), page_size=20, style_table={'width': '100%', 'height': '100%','textAlign': 'center',},
-)
+            dash_table.DataTable(id='table-resultados', data=resultados.to_dict('records'), page_size=20, style_table={'width': '100%', 'height': '100%','textAlign': 'center'})
          
-            ],
-        style={'textAlign': 'center', "margin-left": "15%", "margin-right": "15%", "margin-bottom": "5%"},
+            
+                ],style={'textAlign': 'center', "margin-left": "15%", "margin-right": "15%", "margin-bottom": "5%"},
+            ),
+        ]
+    )
+    return layout
+
+
+app = dash.Dash(
+    __name__, 
+    plugins=[dl.plugins.pages], 
+    external_stylesheets=[dbc.themes.FLATLY], 
+    update_title='Cargando...',
+    suppress_callback_exceptions=True 
 )
 
-app = dash.Dash(__name__)
+
+@app.callback(
+    Output("page-content", "children"),
+    [Input("url", "pathname")],
+)
+def display_page(pathname):
+    if pathname == "/Nosotros":
+        return layout_nosotros()
+    elif pathname == "/Contexto":
+        return layout_Contexto()
+    # Agrega más condiciones para otras páginas según sea necesario
+    else:
+        return create_layout()
+
+# Funciones de diseño para páginas adicionales
+def layout_nosotros():
+    return html.Div(
+        children=[
+            create_navbar(),  # Agrega la barra de navegación
+                dbc.Col([
+                dbc.Row(["Equipo 7"], className= "flex-fill ", style={'textAlign': 'center', 'color':'#0380C4'})
+                ], className = "d-flex display-4 align-self-center flex-column align-items-center"),
+
+                dbc.Col([
+                html.Br(),    
+                html.Br(),
+                dbc.Row([
+                html.Img(
+                        src='https://raw.githubusercontent.com/millerpuentes/Despliegue_Recomendador/main/Imagenes/image_Catalina.png',
+                        className="img-fluid",
+                        style={'width': '200px', 'height': 'auto'}
+                        )
+                ], className="d-flex justify-content-center align-items-center"),
+                html.H3("Catalina Cárdenas",style={'textAlign': 'center', 'color': '#008080'}),
+
+                html.Br(),    
+                html.Br(),
+                dbc.Row([
+                html.Img(
+                        src='https://raw.githubusercontent.com/millerpuentes/Despliegue_Recomendador/main/Imagenes/image_Grace.png',
+                        className="img-fluid",
+                        style={'width': '200px', 'height': 'auto'}
+                        )
+                ], className="d-flex justify-content-center align-items-center"),
+                html.H3("Grace González",style={'textAlign': 'center', 'color': '#008080'}),
+
+                html.Br(),    
+                html.Br(),
+                dbc.Row([
+                html.Img(
+                        src='https://raw.githubusercontent.com/millerpuentes/Despliegue_Recomendador/main/Imagenes/image_Joan.png',
+                        className="img-fluid",
+                        style={'width': '200px', 'height': 'auto'}
+                        )
+                ], className="d-flex justify-content-center align-items-center"),
+                html.H3("Joan Chacón",style={'textAlign': 'center', 'color': '#008080'}),
+
+
+                html.Br(),    
+                html.Br(),
+                dbc.Row([
+                html.Img(
+                        src='https://raw.githubusercontent.com/millerpuentes/Despliegue_Recomendador/main/Imagenes/image_MP.png',
+                        className="img-fluid",
+                        style={'width': '200px', 'height': 'auto'}
+                        )
+                ], className="d-flex justify-content-center align-items-center"),
+                html.H3("Miller Puentes",style={'textAlign': 'center', 'color': '#008080'}),
+              
+                ]),
+
+                dbc.Row([
+                dbc.Col([html.Div(),], className = 'p-5'),
+                ]),
+                
+                dbc.Row([
+                dbc.Col([html.Div(),], className = 'p-5'),
+                ]),
+])
+
+def layout_Contexto():
+    return html.Div(
+        children=[
+            create_navbar(),  # Agrega la barra de navegación
+            html.H1("Contenido de la Página 2"),
+            # Agrega el resto del contenido de la página 2 aquí
+        ]
+    )
+
 
 @app.callback(
     Output(component_id='table-resultados', component_property='data'),
@@ -158,6 +282,9 @@ def update_table_data(nit, fecha,noticias, n_clicks):
 
     return resultados.to_dict('records')
 
-app.layout = create_layout()
+app.layout = html.Div([
+    dcc.Location(id="url", refresh=False),
+    html.Div(id="page-content"),
+])
 
 app.run_server(debug=True, port=8040)

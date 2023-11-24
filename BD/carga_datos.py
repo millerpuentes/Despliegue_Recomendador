@@ -1,8 +1,8 @@
 import psycopg2
 from psycopg2 import sql
-import pandas as 
 from dotenv import load_dotenv
 import os
+import pandas as pd
 
 # Configuracion de la base de datos
 load_dotenv('app.env')
@@ -19,9 +19,9 @@ DB_CONFIG = {
 
 """ Se cargan los datos de Stemming"""
 # Ruta del archivo CSV
-#csv_file_path = '../Data/df_stemming_BD.csv'
+csv_file_path = '../Data/df_stemming_BD.csv'
 # Nombre de la tabla en la base de datos
-#table_name = "bd_stemming"
+table_name = "bd_stemming"
 #Fecha,Tema_noticia,Titulo_noticia,Url
 
 """ Se cargan los datos de Lematizacion"""
@@ -33,9 +33,9 @@ DB_CONFIG = {
 
 """ Se cargan los datos de los clientes"""
 # Ruta del archivo CSV
-csv_file_path = '../Data/df_clientes_BD.csv'
+#csv_file_path = '../Data/df_clientes_BD.csv'
 # Nombre de la tabla en la base de datos
-table_name = "bd_clientes"
+#table_name = "bd_clientes"
 #Nit,Nombre,Sector
 
 connection = psycopg2.connect(**DB_CONFIG)
@@ -49,23 +49,23 @@ cursor.execute(drop_table_query)
 connection.commit()
 
 # Leer el CSV con pandas
-#df = pd.read_csv(csv_file_path)
+df = pd.read_csv(csv_file_path)
 
 #Fecha,Tema_noticia,Titulo_noticia,Url
 # Crear la tabla con tipos de datos específicos
-#column_data_types = {
-#    'Fecha': 'DATE',
-#    'Tema_noticia': 'VARCHAR(255)',
-#    'Titulo_noticia': 'TEXT',
-#    'Url': 'TEXT',
-#}
+column_data_types = {
+    'Fecha': 'DATE',
+    'Tema_noticia': 'VARCHAR(255)',
+    'Titulo_noticia': 'TEXT',
+    'Url': 'TEXT',
+}
 
 #Nit,Nombre,Sector
-column_data_types = {
-    'Nit': 'VARCHAR(255)',
-    'Nombre': 'VARCHAR(255)',
-    'Sector': 'VARCHAR(255)'
-}
+#column_data_types = {
+#    'Nit': 'VARCHAR(255)',
+#    'Nombre': 'VARCHAR(255)',
+#    'Sector': 'VARCHAR(255)'
+#}
 
 columns_with_types = [
     f'"{column}" {column_data_types.get(column, "VARCHAR(255)")}'
