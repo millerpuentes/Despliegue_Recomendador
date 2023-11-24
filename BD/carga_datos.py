@@ -26,16 +26,16 @@ table_name = "bd_stemming"
 
 """ Se cargan los datos de Lematizacion"""
 # Ruta del archivo CSV
-#csv_file_path = '../Data/df_lemat_BD.csv'
+csv_file_path = '../Data/df_lemat_BD.csv'
 # Nombre de la tabla en la base de datos
-#table_name = "bd_lematizacion"
+table_name = "bd_lematizacion"
 #Fecha,Tema_noticia,Titulo_noticia,Url
 
 """ Se cargan los datos de los clientes"""
 # Ruta del archivo CSV
-#csv_file_path = '../Data/df_clientes_BD.csv'
+csv_file_path = '../Data/df_clientes_BD.csv'
 # Nombre de la tabla en la base de datos
-#table_name = "bd_clientes"
+table_name = "bd_clientes"
 #Nit,Nombre,Sector
 
 connection = psycopg2.connect(**DB_CONFIG)
@@ -61,11 +61,11 @@ column_data_types = {
 }
 
 #Nit,Nombre,Sector
-#column_data_types = {
-#    'Nit': 'VARCHAR(255)',
-#    'Nombre': 'VARCHAR(255)',
-#    'Sector': 'VARCHAR(255)'
-#}
+column_data_types = {
+    'Nit': 'VARCHAR(255)',
+    'Nombre': 'VARCHAR(255)',
+    'Sector': 'VARCHAR(255)'
+}
 
 columns_with_types = [
     f'"{column}" {column_data_types.get(column, "VARCHAR(255)")}'

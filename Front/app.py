@@ -216,7 +216,16 @@ def layout_Contexto():
     return html.Div(
         children=[
             create_navbar(),  # Agrega la barra de navegación
-            html.H1("Contenido de la Página 2"),
+            html.H1("Contexto de Negocio"),
+            html.H6("Como parte de la estrategia comercial y de fidelización de clientes\
+                    en una entidad bancaria, se desarrolló una herramienta informativa basada en\
+                    aprendizaje automático para ofrecer a los clientes recomendaciones de noticias\
+                    relevantes y confiables de acuerdo a su sector. Se analizó una base de datos vinculando\
+                    información de clientes y noticias mediante algoritmos de PLN, dada su composición\
+                    textual predominante. La clusterización temática de las noticias se efectuó con el\
+                    modelo LDA de Gensim, evaluando su eficacia tanto con textos lematizados como con\
+                    Stemming. Se realizó además una recategorización de clientes para afinar las recomendaciones\
+                    según la relevancia temática para cada sector.", style={'textAlign': 'center', 'color': '#008080'})
             # Agrega el resto del contenido de la página 2 aquí
         ]
     )
