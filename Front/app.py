@@ -216,11 +216,14 @@ def layout_Contexto():
     return html.Div(
         children=[
             create_navbar(),  # Agrega la barra de navegación
-            html.H1("Contexto de Negocio"),
-            html.H6("Como parte de la estrategia comercial y de fidelización de clientes\
-                    en una entidad bancaria, se desarrolló una herramienta informativa basada en\
-                    aprendizaje automático para ofrecer a los clientes recomendaciones de noticias\
-                    relevantes y confiables de acuerdo a su sector. Se analizó una base de datos vinculando\
+            html.Br(),       
+            html.Br(),  
+            html.Br(),  
+            html.H1("Contexto de Negocio",style={'textAlign': 'center'}),
+            html.H3("Como parte de la estrategia comercial y de fidelización de clientes en una\
+                    entidad bancaria, se desarrolló una herramienta informativa basada en aprendizaje\
+                    automático para ofrecer a los clientes recomendaciones de noticias relevantes y\
+                    confiables de acuerdo a su sector. Se analizó una base de datos vinculando\
                     información de clientes y noticias mediante algoritmos de PLN, dada su composición\
                     textual predominante. La clusterización temática de las noticias se efectuó con el\
                     modelo LDA de Gensim, evaluando su eficacia tanto con textos lematizados como con\
@@ -229,8 +232,8 @@ def layout_Contexto():
             html.Br(),       
             html.Br(),  
             html.Br(),    
-            html.H1("Impacto"), 
-            html.H6("La relevancia de este ejercicio analítico radica en fortalecer el conocimiento que el \
+            html.H1("Impacto",style={'textAlign': 'center'}), 
+            html.H3("La relevancia de este ejercicio analítico radica en fortalecer el conocimiento que el \
                     banco tiene sobre sus clientes corporativos. Mediante el uso de técnicas de aprendizaje no \
                     supervisado como el procesamiento de lenguaje natural (NLP), se busca diseñar un sistema de \
                     recomendación de noticias que extraiga y categorice información relevante de medios de comunicación.\
