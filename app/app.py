@@ -388,4 +388,5 @@ app.layout = html.Div([
     html.Div(id="page-content"),
 ])
 
-app.run_server(debug=True, port=8040)
+if __name__ == '__main__':
+    app.run_server(debug=False)

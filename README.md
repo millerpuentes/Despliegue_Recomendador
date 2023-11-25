@@ -33,7 +33,7 @@ Como parte de la estrategia comercial y de fidelización de clientes en una enti
 * [BD](https://github.com/millerpuentes/Despliegue_Recomendador/tree/main/BD): Script de python para cargar los datos a la Base de Datos.
 * [Data](https://github.com/millerpuentes/Despliegue_Recomendador/tree/main/Data): Carpeta donde reposa toda la trazabilidad de los datos trabajados a lo largo del proyecto, se tiene la trazabilidad con ayuda de la herramienta DVC.
 * [Dev](https://github.com/millerpuentes/Despliegue_Recomendador/tree/main/Dev): En esta carpeta se tienen los Notebooks de Jupiter en los cuales se realizó el EDA, Modelamiento y se generó la primera versión del recomendador.
-* [Front](https://github.com/millerpuentes/Despliegue_Recomendador/tree/main/Front): Esta carpeta contiene el tablero utilizado para disponibilizar el recomendador, programado en Python con la librería Dash.
+* [app](https://github.com/millerpuentes/Despliegue_Recomendador/tree/main/Front): Esta carpeta contiene el tablero utilizado para disponibilizar el recomendador, programado en Python con la librería Dash.
 * [Imagenes](https://github.com/millerpuentes/Despliegue_Recomendador/tree/main/Imagenes): Contiene las imágenes utilizadas a lo largo del proyecto.
 * [Model](https://github.com/millerpuentes/Despliegue_Recomendador/tree/main/Model): Esta carpeta contiene los dos modelos utilizados en la herramienta MLflow y sus respectivos experimentos que se utilizaron para obtener los mejores hiperparámetros para definir los temas. 
 
