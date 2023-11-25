@@ -50,7 +50,7 @@ En conclusión, el sistema recomendador, basado en LDA con texto lematizado, log
 ## 2. Descripción de los Datos del proyecto
 
 **Modelo Relacional de los datos**
-![Diagrama Relacional](../Imagenes/Diagrama_relacional.png)
+![Diagrama Relacional](Imagenes/Diagrama_relacional.png)
 
 Se utilizaron los set de datos porporcionados por el Centro de Analítica de Bancolombia, disponible en Kaggle, compuesto por tres archivos CSV interconectados por dos claves principales. El archivo “clientes.csv” detalla información de los clientes del banco, “noticias.csv” lista títulos, identificadores, URLs, fechas y contenidos de noticias, y “clientes_noticias.csv” vincula clientes con noticias mediante identificadores.
 
@@ -77,35 +77,33 @@ Para ello se diseñó un experimento en python, guardando su trazabilidad con ay
 
 **passes:** representa la cantidad de veces que el modelo recorre todo el corpus durante el entrenamiento. Un valor más alto puede mejorar la calidad del modelo al permitirle ajustarse mejor a los datos, pero también puede aumentar el tiempo de entrenamiento. Es una especie de medida de la paciencia del modelo para aprender de los datos.
 
-![Resultados](../Imagenes/resultados_modelos.png)
-
-
+![Resultados](/Imagenes/resultados_modelos.png)
 
 Posteriormentes de crea una función en python para evaluar las diferentes configuraciones con respecto a los temas con las que se identificó que la cantidad de temas ideal en estas dos métricas fue 16 acorde a los rangos evaluados para el modelo con Stemming.Al realizar el proceso al corpus con Lematización, la máxima coherencia entre los temas y baja perplejidad se alcanza cuando los temas son 19 para el rango evaluado.
 
 La representación gráfica de los temas encontrados para las palabras trabajadas por Stemming se pueden visualizar con pyLDAvis en un plano de dos componentes principales:
 
-![Temas Stemming](../Imagenes/topicos_stemming.png)
+![Temas Stemming](Imagenes/topicos_stemming.png)
 
 En el que la mayoría de los temas aparecen claramente diferenciados. Los traslapes observados en los temas 2 y 5 probablemente no ocurren en una vista tridimensional, confirmado durante el análisis para la asignación de categorías.
 
 Para el modelo LDA - lematizado se asignaron palabras clave a cada clúster de noticias, se visualizaron los resultados al igual que con los datos trabajados por Stemming con la librería pyLDAvis (19 temas):
 
-![Temas Lematizados](../Imagenes/topicos_lematizados.png)
+![Temas Lematizados](Imagenes/topicos_lematizados.png)
 
 Aquí, aunque la mayoría de los temas están bien definidos, los temas 2, 4, 8, y 10 presentan traslapes y requieren verificación manual durante la asignación de categorías. Las Figuras 6 y 7 revelan similitudes en las agrupaciones entre ambos métodos, como el tema 1 en Stemming correlacionado con el tema 9 en Lematización, esta similitud se identificó mediante inspección manual.
 
 Luego de la identificación de los temas se procedió a asignar de manera manual la correspondencia de acuerdo a las categorías de las noticias como lo muestra la siguiente tabla:
 
 <p align="center">
-  <img width="480" height="300" src="../Imagenes/categoria_temas.png" alt="Categorías por temas">
+  <img width="480" height="300" src="Imagenes/categoria_temas.png" alt="Categorías por temas">
 </p>
 
 
 Con la asignación por temas se le asignó una relevancia a las noticias de acuerdo al sector en que se encontraba el cliente (Salud o Industrial):
 
 <p align="center">
-  <img width="480" height="300" src="../Imagenes/relevancia_sector.png" alt="Relevancia de noticia por Sector">
+  <img width="480" height="300" src="Imagenes/relevancia_sector.png" alt="Relevancia de noticia por Sector">
 </p>
 
 
@@ -119,11 +117,11 @@ Para ilustrar la salida de las recomendaciones obtenidas por cada método se sel
 
 Sector salud:
 
-![Noticias Sector Salud - Stemming](../Imagenes/clientes_sector_salud.png)
+![Noticias Sector Salud - Stemming](Imagenes/clientes_sector_salud.png)
 
 Sector Industrial:
 
-![Noticias Sector Industrial - Stemming](../Imagenes/clientes_sector_industrial.png)
+![Noticias Sector Industrial - Stemming](Imagenes/clientes_sector_industrial.png)
 
 El recomendador está seleccionando de manera adecuada la priorización de noticias para el cliente en cuestión, mostrando la calidad de las noticias clasificadas con respecto al tema etiquetado, logrando clasificaciones coherentes y precisas.
 
@@ -151,30 +149,7 @@ En cuanto a la evaluación, debido al enfoque de aprendizaje no supervisado del 
 
 ### Desarrolladores: 
 <p align="center">
-  <img width="200" src="Imagenes/image_Joan.png" alt="Joan Esteban Chacón">
-</p>
-<p align="center">
-  <b>Joan Esteban Chacón</b>
-</p>
-<p align="center">
-  <img width="200" src="Imagenes/image_Grace.png" alt="Grace Gonzalez">
-</p>
-<p align="center">
-  <b>Grace Gonzalez</b>
-</p>
-
-<p align="center">
-  <img width="200" src="Imagenes/image_Catalina.png" alt="Catalina Cárdenas">
-</p>
-<p align="center">
-  <b>Catalina Cárdenas</b>
-</p>
-
-<p align="center">
-  <img width="200" src="Imagenes/image_MP.png" alt="Miller Puentes">
-</p>
-<p align="center">
-  <b>Miller Puentes</b>
+  <img src="Imagenes/equipo.png" alt="Joan Esteban Chacón">
 </p>
 
 <p align="center">
