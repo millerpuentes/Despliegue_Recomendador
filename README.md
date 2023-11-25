@@ -153,5 +153,5 @@ En cuanto a la evaluación, debido al enfoque de aprendizaje no supervisado del 
 </p>
 
 <p align="center">
-  <img width="450" height="150" src="Imagenes/image_MIAD.png" alt="MIAD">
+  <img width="150" height="150" src="Imagenes/image_MIAD.png" alt="MIAD">
 </p>
