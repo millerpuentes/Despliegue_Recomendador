@@ -2,14 +2,15 @@ import dash
 from dash import dcc, html
 import dash_labs as dl
 from dash.dependencies import Input, Output, State
-import dash_table
+from dash import dash_table
 import psycopg2
 from dotenv import load_dotenv
 import os
 import pandas as pd
 from datetime import date
 import dash_bootstrap_components as dbc
-#from dash_labs.plugins.pages import register_page
+from dash.dash_table.Format import Group
+
 
 
 # Configuracion de la base de datos
@@ -37,9 +38,6 @@ data_clientes = cursor.fetchall()
         
 df_stemming = pd.DataFrame(data_stemming, columns=['Fecha', 'Tema_noticia', 'Titulo_noticia', 'Url'])
 df_clientes = pd.DataFrame(data_clientes, columns=['Nit', 'Nombre', 'Sector'])
-
-print(df_stemming) 
-print(df_clientes)
 
 resultados = pd.DataFrame(columns=['Fecha', 'Tema_noticia', 'Titulo_noticia', 'Url'])
 
@@ -354,7 +352,7 @@ def update_table_data(nit, fecha, noticias, n_clicks):
         df_stemming2 = df_stemming[df_stemming['Fecha'] == fecha]
 
         if len(df_stemming2) == 0:
-            #return [{'Mensaje': 'No existen noticias registradas para esas fechas'}]
+            
             return [{'Fecha': '', 'Tema_noticia': '', 'Titulo_noticia': '', 'Url': '', 'Mensaje': 'No hay noticias'}]
         
         else:
