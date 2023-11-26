@@ -1,12 +1,12 @@
 FROM python:3.8.13
 
+RUN apt-get update && apt-get install -y libpq-dev postgresql-client
+
 # Crear usuario que ejecuta el dash
 RUN adduser --disabled-password --gecos '' dash-user
 
 # Definir directorio de trabajo 
 WORKDIR /opt/app
-
-RUN apt-get update && apt-get install -y libpq-dev
 
 # Instalar dependencias
 ADD ./app /opt/app/
@@ -24,3 +24,4 @@ EXPOSE 8050
 
 # Comandos a ejecutar al correr el contenedor 
 CMD ["bash", "./run.sh"]
+
