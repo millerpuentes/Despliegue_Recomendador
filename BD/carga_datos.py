@@ -15,8 +15,6 @@ DB_CONFIG = {
 }
 
 
-
-
 """ Se cargan los datos de Stemming"""
 # Ruta del archivo CSV
 csv_file_path = '../Data/df_stemming_BD.csv'
@@ -78,9 +76,6 @@ connection.commit()
 # Cargar datos desde el CSV
 with open(csv_file_path, 'r', encoding='utf-8') as f:
     cursor.copy_expert(f"COPY {table_name} FROM stdin WITH CSV HEADER DELIMITER as ','", f)
-
-
-
 
 # Realizar una consulta para obtener los primeros 5 datos de la tabla
 select_query = sql.SQL("SELECT * FROM {} LIMIT 5").format(sql.Identifier(table_name))

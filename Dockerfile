@@ -6,6 +6,8 @@ RUN adduser --disabled-password --gecos '' dash-user
 # Definir directorio de trabajo 
 WORKDIR /opt/app
 
+RUN apt-get update && apt-get install -y libpq-dev
+
 # Instalar dependencias
 ADD ./app /opt/app/
 RUN pip install --upgrade pip

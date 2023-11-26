@@ -203,7 +203,17 @@ def create_layout():
                         'maxWidth': 200,  # Ajusta este ancho según tus necesidades
                         'maxHeight':500,
                     }
-    ]
+                    ],
+                style_data_conditional=[
+                    {
+                        'if': {
+                            'filter_query': '{Mensaje} contains "No hay noticias"'
+                             },
+                             'backgroundColor': '#FFD700',
+                             'color': 'black'
+        }
+    ],
+
 )
 
             
@@ -337,56 +347,59 @@ def layout_Contexto():
     ],
     prevent_initial_call=True,
 )
-
-def update_table_data(nit, fecha,noticias, n_clicks):
+def update_table_data(nit, fecha, noticias, n_clicks):
     if n_clicks > 0:
         num_noticias = int(noticias)
-        df_stemming2 = df_stemming[df_stemming['Fecha']==fecha]
-        df_stemming2 = df_stemming2.sample(n=num_noticias, random_state=42)
+        fecha = date.fromisoformat(fecha)
+        df_stemming2 = df_stemming[df_stemming['Fecha'] == fecha]
 
-        # Se les da el valor dependiendo del cliente
-        def asignar_valor(row, sector):
-            temas = {'Salud': [1, 9],
-                     'Sostenibilidad': [2, 3],
-                     'Innovación': [3, 4],
-                     'Regulaciones': [4, 5],
-                     'Deportes': [5, 10],
-                     'Cultura': [6, 8],
-                     'Reputación': [7, 7],
-                     'Macroeconómicas': [8, 1],
-                     'Política': [9, 2],
-                     'Alianzas': [10, 6]
-                    }
-            tema = row['Tema_noticia']
-
-            if sector == 'Salud':
-                return temas.get(tema, [11, 0])[0]
-            else:
-                return temas.get(tema, [11, 0])[1]
-            
-        # Se identifica el sector del Nit
-        s = df_clientes[df_clientes['Nit'] == nit]['Sector'].iloc[0]
-
-        # Se le aplica el valor asignado con la función asignar_valor
-        df_stemming2['valor_asignado'] = df_stemming2.apply(lambda row: asignar_valor(row, s), axis=1)
-
-        # Ordena el DataFrame por la columna 'valor_asignado'
-        df_stemming2 = df_stemming2.sort_values(by='valor_asignado')
-
-        df_stemming2.drop('valor_asignado', axis=1, inplace=True)
-
-        resultados_dict = df_stemming2.to_dict('records')        
+        if len(df_stemming2) == 0:
+            #return [{'Mensaje': 'No existen noticias registradas para esas fechas'}]
+            return [{'Fecha': '', 'Tema_noticia': '', 'Titulo_noticia': '', 'Url': '', 'Mensaje': 'No hay noticias'}]
         
+        else:
+            df_stemming2 = df_stemming2.sample(n=num_noticias, random_state=42)
+            # Se identifica el sector del Nit (moví esta línea fuera del bloque 'else')
+            s = df_clientes[df_clientes['Nit'] == nit]['Sector'].iloc[0]
+
+            # Se les da el valor dependiendo del cliente
+            def asignar_valor(row, sector):
+                temas = {'Salud': [1, 9],
+                         'Sostenibilidad': [2, 3],
+                         'Innovación': [3, 4],
+                         'Regulaciones': [4, 5],
+                         'Deportes': [5, 10],
+                         'Cultura': [6, 8],
+                         'Reputación': [7, 7],
+                         'Macroeconómicas': [8, 1],
+                         'Política': [9, 2],
+                         'Alianzas': [10, 6]
+                         }
+                tema = row['Tema_noticia']
+
+                if sector == 'Salud':
+                    return temas.get(tema, [11, 0])[0]
+                else:
+                    return temas.get(tema, [11, 0])[1]
+
+            # Se le aplica el valor asignado con la función asignar_valor
+            df_stemming2['valor_asignado'] = df_stemming2.apply(lambda row: asignar_valor(row, s), axis=1)
+
+            # Ordena el DataFrame por la columna 'valor_asignado'
+            df_stemming2 = df_stemming2.sort_values(by='valor_asignado')
+
+            df_stemming2.drop('valor_asignado', axis=1, inplace=True)
+
+            resultados_dict = df_stemming2.to_dict('records')
+
         return resultados_dict
 
 
-        
-        #return resultados.to_dict('records')
 
 app.layout = html.Div([
     dcc.Location(id="url", refresh=False),
     html.Div(id="page-content"),
 ])
 
-if __name__ == '__main__':
-    app.run_server(debug=False)
+app.run_server(debug=True, port=8040)
+#app.run_server(host="0.0.0.0", debug=True)
